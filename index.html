@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/datos-encriptados.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <main>
+
+        <div class="container animate__animated animate__fadeIn">
+            <img src="image/Vector.svg" alt="logo alaura">
+            <br>
+            <div class="data-content">
+                <textarea placeholder="Ingrese el texto aqui" id="txt-data"></textarea>
+                <br>
+                <div id="alert-txt">
+                    <span>!</span><label for=""> Solo letras minúsculas y sin acentos</label>
+                </div>
+                <br><br>
+                <div class="class-btn">
+                    <button class="btn-encriptar" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="content-container animate__bounceIn">
+            <textarea id="txt-result"></textarea>
+            <div class="content" id="content">
+                <img src="image/Muñeco.svg" alt="img">
+                <br>
+                <strong for="">Ningún mensaje fue encontrado</strong>
+                <br><br>
+                <label>Ingresa el texto que desees encriptar o desencriptar.</label>
+            </div>
+            <span id="r-copy"></span>
+            <div class="class-btn-copiar" id="c-btn-copiar">
+                <button class="btn-copiar" id="btn-copiar" onclick="copy()">Copiar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
